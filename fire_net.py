@@ -38,7 +38,7 @@ def detect_from_video():
     detector.setJsonPath(configuration_json=os.path.join(execution_path, "detection_config.json"))
     detector.loadModel()
 
-    detected_video_path = detector.detectObjectsFromVideo(input_file_path=os.path.join(execution_path, "video1.mp4"), frames_per_second=30, output_file_path=os.path.join(execution_path, "video1-detected"), minimum_percentage_probability=40, log_progress=True )
+    detected_video_path = detector.detectObjectsFromVideo(input_file_path=os.path.join(execution_path, "video3.avi"), frames_per_second=30, output_file_path=os.path.join(execution_path, "video3-detected"), minimum_percentage_probability=40, log_progress=True )
 
 
 detect_from_video()
